@@ -39,7 +39,15 @@ def extract_hidden_links(file_path):
 
     return found_data
 
-# --- HOW TO RUN ---
-# path = r"C:\Users\TecX's CTO\Downloads\image_name.jpg" # Use 'r' for paths with backslashes
-# results = extract_hidden_links(path)
-# print(results)
+if __name__=="__main__":
+    # --- Example Usage ---
+    # Path to your WhatsApp Images folder
+    folder_path = r"C:\Users\TecX's CTO\Downloads"
+    # Example file
+    img=["1000034148.jpg", "1000034352.jpg", "1000034334.jpg", "1000034378.jpg", "1000034398.jpg", "Mr. Rahul. invoice.pdf"]
+    for i in range(len(img)):
+        img_path = os.path.join(folder_path, img[i])
+        # --- HOW TO RUN --
+        # path = r"C:\Users\TecX's CTO\Downloads\image_name.jpg" # Use 'r' for paths with backslashes
+        results = extract_hidden_links(img_path)
+        print(results)
