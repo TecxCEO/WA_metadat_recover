@@ -70,5 +70,6 @@ def scan_folder(folder_path):
 if __name__=="__main__":
     # --- Set your path here ---
     # Use 'r' before the string to handle backslashes correctly
-    TARGET_DIR = r"C:\Users\TecX's CTO\Downloads"
+    #TARGET_DIR = r"C:\Users\TecX's CTO\Downloads"
+    TARGET_DIR = r"data"
     scan_folder(TARGET_DIR)
