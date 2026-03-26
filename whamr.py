@@ -35,12 +35,14 @@ if __name__=="__main__":
     # Path to your WhatsApp Images folder
     folder_path = r"C:\Users\TecX's CTO\Downloads"
     # Example file
-    img_path = os.path.join(folder_path, "1000034148.jpg")
+    img=["1000034148.jpg", "1000034352.jpg", "1000034334.jpg"]
+    for i in range(len(img)):
+        img_path = os.path.join(folder_path, img[i])
+        result = get_image_metadata(img_path)
+        print(result)
     # Print results
     ####metadata = get_whatsapp_file_metadata(img_path)
     # Usage
-    result = get_image_metadata(img_path)
-    print(result)
     ###for key, value in metadata.items():
         ###print(f"{key}: {value}")
     
