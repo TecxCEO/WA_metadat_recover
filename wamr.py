@@ -44,7 +44,7 @@ def get_whatsapp_file_metadata(file_path):
 
 # --- Example Usage ---
 # Path to your WhatsApp Images folder
-folder_path = r'C:\Users\TecX's CTO\Downloads' 
+folder_path = r"C:\Users\TecX's CTO\Downloads" 
 # Example file
 # img_path = os.path.join(folder_path, "1000034148.jpg")
 
