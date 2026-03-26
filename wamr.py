@@ -42,14 +42,15 @@ def get_whatsapp_file_metadata(file_path):
 
     return meta
 
-# --- Example Usage ---
-# Path to your WhatsApp Images folder
-folder_path = r"C:\Users\TecX's CTO\Downloads" 
-# Example file
-# img_path = os.path.join(folder_path, "1000034148.jpg")
 
-# Print results
-# metadata = get_whatsapp_file_metadata(img_path)
-# for key, value in metadata.items():
-#     print(f"{key}: {value}")
-
+if __name__=="__main__":
+    # --- Example Usage ---
+    # Path to your WhatsApp Images folder
+    folder_path = r"C:\Users\TecX's CTO\Downloads"
+    # Example file
+    img_path = os.path.join(folder_path, "1000034148.jpg")
+    # Print results
+    metadata = get_whatsapp_file_metadata(img_path)
+    for key, value in metadata.items():
+        print(f"{key}: {value}")
+    #####get_whatsapp_file_metadata(img_path)
