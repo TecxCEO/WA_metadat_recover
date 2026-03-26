@@ -41,6 +41,6 @@ if __name__=="__main__":
     # Usage
     result = get_image_metadata(img_path)
     print(result)
-    for key, value in metadata.items():
-        print(f"{key}: {value}")
+    ###for key, value in metadata.items():
+        ###print(f"{key}: {value}")
     
