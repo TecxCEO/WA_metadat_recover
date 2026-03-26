@@ -29,8 +29,16 @@ def get_image_metadata(img_path):
         
     except Exception as e:
         return f"Error: {e}"
-
-# Usage
-# result = get_image_metadata("IMG-20231020-WA0005.jpg")
-# print(result)
-
+if __name__=="__main__":
+    # Usage
+    result = get_image_metadata("IMG-20231020-WA0005.jpg")
+    print(result)
+    # --- Example Usage ---
+    # Path to your WhatsApp Images folder
+    folder_path = r"C:\Users\TecX's CTO\Downloads"
+    # Example file
+    img_path = os.path.join(folder_path, "1000034148.jpg")
+    # Print results
+    metadata = get_whatsapp_file_metadata(img_path)
+    for key, value in metadata.items():
+        print(f"{key}: {value}")
