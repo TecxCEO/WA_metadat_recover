@@ -67,7 +67,8 @@ def scan_folder(folder_path):
                     for link in data["Binary_Links"]:
                         print(f"   [!] Found URL: {link}")
 
-# --- Set your path here ---
-# Use 'r' before the string to handle backslashes correctly
-TARGET_DIR = r"C:\Users\TecX's CTO\Downloads"
-scan_folder(TARGET_DIR)
+if __name__=="__main__":
+    # --- Set your path here ---
+    # Use 'r' before the string to handle backslashes correctly
+    TARGET_DIR = r"C:\Users\TecX's CTO\Downloads"
+    scan_folder(TARGET_DIR)
